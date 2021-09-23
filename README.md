@@ -4,9 +4,9 @@
 * pip install -r requirements.txt
 
 ### dot-env Structure
-DEBUG=False
-DB_URI=""
-DB_NAME=""
+DEBUG=False<br>
+DB_URI=""<br>
+DB_NAME=""<br>
 JWT_SECRET_KEY=""
 
 ### Run Command

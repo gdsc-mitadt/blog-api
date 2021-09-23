@@ -32,7 +32,12 @@ class BasicBlogsApi(Resource):
         except Exception:
             raise InternalServerError
 
-class UpdateBlogsApi(Resource):
+class BlogsByIdApi(Resource):
+    def get(self,id):
+        try:
+            return jsonify(Blogs.objects.get(id=id))
+        except NoAuthorizationError:
+            raise NoAuthorizationError
     def delete(self,id):
         try:
             Blogs.objects.get(id=id).delete()

@@ -1,4 +1,4 @@
-# GDSC BLOG API
+# GDSC-ADTU BLOG API
 
 ### Requirements
 * pip install -r requirements.txt
